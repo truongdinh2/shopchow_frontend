@@ -12,6 +12,8 @@
   <button class="btn" @click="counter.increment(10)">+10</button>
   <button class="btn" @click="counter.increment(100)">+100</button>
   <button class="btn" @click="counter.n++">Direct Increment</button>
+
+  <p>{{ $myPlugin() }}</p>
 </template>
 
 <script setup lang="ts">
