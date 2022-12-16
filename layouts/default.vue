@@ -1,7 +1,7 @@
 <template>
   <TheHeader />
 
-  <main>
+  <main class="min-h-[88vh] mt-[3.5rem]">
     <slot />
   </main>
 

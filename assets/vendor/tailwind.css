@@ -11,3 +11,11 @@ body {
     @apply rounded-md text-white p-4 bg-blue-500;
   }
 }
+@layer utilities {
+    .bg-color-main {
+        background-color: aquamarine;
+    }
+    .bg-bagde {
+        background-color: #FF2E63;
+    }
+  }
