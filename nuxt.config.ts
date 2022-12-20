@@ -1,6 +1,10 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: ["@nuxtjs/tailwindcss", "@nuxt/image-edge", "@pinia/nuxt"],
+  // components: {
+    // global: true,
+  //   dirs: ['~/components',]
+  // },
   app: {
     head: {
       title: "ShopChow",
@@ -18,7 +22,7 @@ export default defineNuxtConfig({
       ],
     },
   },
-  css: ['@/assets/style/style.scss'], 
+  css: ['@/assets/style/style.scss'],
   tailwindcss: {
     cssPath: '@/assets/vendor/tailwind.css',
   },
