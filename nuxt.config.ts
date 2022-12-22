@@ -22,7 +22,7 @@ export default defineNuxtConfig({
       ],
     },
   },
-  css: ['@/assets/style/style.scss'],
+  css: ['@/assets/style/style.scss','ant-design-vue/dist/antd.css'],
   tailwindcss: {
     cssPath: '@/assets/vendor/tailwind.css',
   },

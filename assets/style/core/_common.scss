@@ -1,7 +1,14 @@
-.modal-bg{
-    background-color: #cacaca;
-    opacity: 0.6;
+.modal-bg {
+  background-color: #cacaca;
+  opacity: 0.6;
 }
-body.modal-open{
-    overflow: hidden;
+body.modal-open {
+  overflow: hidden;
+}
+a {
+  color: inherit !important;
+  text-decoration: inherit !important;
+}
+html{
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto
 }

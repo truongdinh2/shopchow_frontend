@@ -1,10 +1,10 @@
 <template>
   <TheHeader />
 
-  <main class="min-h-[88vh] mt-[3.5rem]">
+  <main class="min-h-[calc(100vh-16rem)] mt-[3.5rem]">
     <slot />
   </main>
-
+  <SocialGroup />
   <TheFooter />
 </template>
 
