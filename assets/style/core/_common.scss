@@ -9,6 +9,9 @@ a {
   color: inherit !important;
   text-decoration: inherit !important;
 }
-html{
-    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto
+html {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto;
+  textarea {
+    border: 1px solid black;
+  }
 }

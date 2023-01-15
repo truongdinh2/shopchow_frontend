@@ -1,7 +1,7 @@
 <template>
   <TheHeader />
 
-  <main class="min-h-[calc(100vh-16rem)] mt-[3.5rem]">
+  <main class="min-h-[calc(100vh-16rem)] mt-[3.5rem] l-main">
     <slot />
   </main>
   <SocialGroup />
