@@ -6,8 +6,12 @@
       </div>
       <div class="text-center basis-full text-sm font-semibold">Mạng xã hội</div>
       <div class="flex justify-center mt-2">
-        <NuxtImg src="/tiktok.png" sizes="sm:50px md:70px lg:70px"></NuxtImg>
-        <NuxtImg src="/facebook.png" sizes="sm:50px md:70px lg:70px"></NuxtImg>
+        <NuxtLink to="#">
+          <NuxtImg src="/tiktok.png" sizes="sm:50px md:70px lg:70px"></NuxtImg>
+        </NuxtLink>
+        <NuxtLink to="#">
+          <NuxtImg src="/facebook.png" sizes="sm:50px md:70px lg:70px"></NuxtImg>
+        </NuxtLink>
       </div>
     </div>
     <div class="rounded-lg bg-footer-upper pt-1 pb-3 basis-[calc(100%/3*2-10px)] lg:basis-[calc(100%/3-10.66px)] ml-2 lg:ml-4">
@@ -15,18 +19,14 @@
         <NuxtImg src="/gold-medal.png" sizes="sm:50px md:70px lg:70px"></NuxtImg>
       </div>
       <div class="text-center basis-full text-sm font-semibold">Góp ý Hỗ trợ nhận giảm giá</div>
-      <div class="px-1.5 text-xs text-slate-600 mt-3.5 text-center">
-        Rất mong nhận được những đóng góp quý báu của bạn
-      </div>
+      <div class="px-1.5 text-xs text-slate-600 mt-3.5 text-center">Rất mong nhận được những đóng góp quý báu của bạn</div>
     </div>
     <div class="rounded-lg bg-footer-upper pt-1 pb-3 basis-full lg:basis-[calc(100%/3-10.66px)] mt-2 font-medium text-slate-700 lg:ml-4 lg:mt-0">
       <div class="flex justify-center">
         <NuxtImg src="/gold-medal.png" sizes="sm:50px md:70px lg:70px"></NuxtImg>
       </div>
       <div class="text-center basis-full text-sm font-semibold">Lời cảm ơn</div>
-      <div class="px-1.5 text-xs text-slate-600 mt-3.5 text-center">
-        Rất mong nhận được những đóng góp quý báu của bạn
-      </div>
+      <div class="px-1.5 text-xs text-slate-600 mt-3.5 text-center">Rất mong nhận được những đóng góp quý báu của bạn</div>
     </div>
   </div>
 </template>
