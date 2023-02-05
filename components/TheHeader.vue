@@ -1,7 +1,7 @@
-<template>
+0<template>
   <div class="l-header sticky top-0 z-50 mx-auto p-3 py-1.5 bg-header w-full md:px-5">
-    <div class=" flex justify-between text-lg">
-      <div class="inline-flex items-center font-medium " >
+    <div class="flex justify-between text-lg">
+      <div class="inline-flex items-center font-medium">
         <div class="">
           <nuxt-img fit="cover" src="logo.png" width="35" height="45" alt="logo" />
         </div>
@@ -39,10 +39,18 @@
     </div>
     <div v-if="isOpenSide" class="side-bar fixed right-0 w-3/4 md:w-1/3 mt-1.5 bg-white h-[100vh] z-40 px-7 py-6 flex flex-col font-medium text-slate-600">
       <div class="text-base leading-6 whitespace-nowrap">
-        <NuxtLink class="flex items-center mt-2" to="/top-love"><span class="border p-0.5 rounded-md"><nuxt-img class="" src="logo.png" width="20" height="23" /></span><span class="ml-3">Top love</span></NuxtLink>
-        <NuxtLink class="flex items-center mt-4" to="/tu-thiet-ke"><span class="border p-0.5 rounded-md"><nuxt-img class="" src="logo.png" width="20" height="23" /></span><span class="ml-3">Tự thiết kế</span></NuxtLink>
-        <NuxtLink class="flex items-center mt-4" to="/tro-choi"><span class="border p-0.5 rounded-md"><nuxt-img class="" src="logo.png" width="20" height="23" /></span><span class="ml-3">Game</span></NuxtLink>
-        <NuxtLink class="flex items-center mt-4" to="/tai-khoan"><span class="border p-0.5 rounded-md"><nuxt-img class="" src="logo.png" width="20" height="23" /></span><span class="ml-3">Tài khoản</span></NuxtLink>
+        <NuxtLink class="flex items-center mt-2" to="/top-love"
+          ><span class="border p-0.5 rounded-md"><nuxt-img class="" src="logo.png" width="20" height="23" /></span><span class="ml-3">Top love</span></NuxtLink
+        >
+        <NuxtLink class="flex items-center mt-4" to="/tu-thiet-ke"
+          ><span class="border p-0.5 rounded-md"><nuxt-img class="" src="logo.png" width="20" height="23" /></span><span class="ml-3">Tự thiết kế</span></NuxtLink
+        >
+        <NuxtLink class="flex items-center mt-4" to="/tro-choi"
+          ><span class="border p-0.5 rounded-md"><nuxt-img class="" src="logo.png" width="20" height="23" /></span><span class="ml-3">Game</span></NuxtLink
+        >
+        <NuxtLink class="flex items-center mt-4" to="/tai-khoan"
+          ><span class="border p-0.5 rounded-md"><nuxt-img class="" src="logo.png" width="20" height="23" /></span><span class="ml-3">Tài khoản</span></NuxtLink
+        >
       </div>
     </div>
   </div>
@@ -55,7 +63,7 @@ const onChangeOpenSide = () => {
   isOpenSide.value = !isOpenSide.value;
 };
 watch(isOpenSide, (newVal) => {
-    console.log(`output->newVal`,newVal)
+  console.log(`output->newVal`, newVal);
   if (newVal) {
     document.body.classList.add('modal-open');
   } else {

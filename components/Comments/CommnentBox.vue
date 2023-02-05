@@ -21,7 +21,6 @@
             <div class="h-9 w-9 flex-shrink-0 rounded-full overflow-hidden object-cover">
               <!-- <img :src="user.image" alt="" class="h-full w-full" /> -->
               <nuxt-img src="anh-1-beau.jpg" sizes="sm:700px md:800px lg:800px" />
-              asd
             </div>
             <span class="font-medium text-dark-blue text-sm lowercase">
               {{ user.username }}
