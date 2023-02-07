@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-slate-900 text-[13px] rounded-md px-2.5 py-0.5 text-white font-medium bg-opacity-50">
+  <div class="bg-slate-900 text-[13px] rounded-md px-2.5 py-0.5 text-white font-medium bg-opacity-30">
     <span v-if="merchandiseStatus == 1">Đã bán {{ merchandiseQuantity > 0 ? merchandiseQuantity + 'c' : 'hết' }} </span>
   </div>
 </template>
