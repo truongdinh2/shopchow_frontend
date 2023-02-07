@@ -1,4 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+// import {quasar} from '@quasar/vite-plugin';
 export default defineNuxtConfig({
   modules: ["@nuxtjs/tailwindcss", "@nuxt/image-edge", "@pinia/nuxt"],
   // components: {
@@ -22,7 +23,7 @@ export default defineNuxtConfig({
       ],
     },
   },
-  css: ['@/assets/style/style.scss','ant-design-vue/dist/antd.css'],
+  css: ['@/assets/style/style.scss','ant-design-vue/dist/antd.css','@quasar/extras/material-icons/material-icons.css', 'quasar/src/css/index.sass'],
   tailwindcss: {
     cssPath: '@/assets/vendor/tailwind.css',
   },
@@ -36,7 +37,12 @@ export default defineNuxtConfig({
           additionalData: '@use "@/assets/style/abstracts/_variables.scss" as *;'
         }
       }
-    }
+    },
+    // plugins: [
+    //   quasar({
+    //     sassVariables: 'assets/vendor/quasar-variables.sass'
+    //   })
+    // ]
   },
   image: {
     dir: 'assets/images'
