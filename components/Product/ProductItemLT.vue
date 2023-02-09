@@ -34,11 +34,19 @@ const discountType = ref<string | number>(1); //giam tien 2 giam %
 const tacgia = ref('Nguyễn đình trường');
 const isNew = ref(true);
 const clotheType = ref(2); // 1 ban 2 moi dang
+<<<<<<< HEAD
+=======
+const toLink = ref('products/1'); // 1 ban 2 moi dang
+>>>>>>> 552cb5e (complete/product-item)
 </script>
 
 <template>
   <article class="rounded-xl bg-white p-1 md:p-3 shadow-lg lg:hover:shadow-xl lg:hover:transform lg:hover:scale-105 duration-300">
+<<<<<<< HEAD
     <NuxtLink to="#">
+=======
+    <NuxtLink :to="toLink">
+>>>>>>> 552cb5e (complete/product-item)
       <div class="relative flex max-h-52">
         <div class="absolute top-0 left-[-1px]">
           <MerchandiseStatus :merchandiseStatus="clotheType" :merchandise-quantity="1" />
