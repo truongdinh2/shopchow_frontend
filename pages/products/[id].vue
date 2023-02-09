@@ -6,11 +6,11 @@
     </div>
     <div class="grid lg:grid-cols-7 gap-2 md:gap-5 lg:gap-7 xl:gap-10">
       <div class="col-span-3 border">
-        <!-- <nuxt-img>g> -->
-        <nuxt-img class="mx-auto" src="anh-ao-mau.png" fit="cover" sizes="sm:350px md:350px lg:400px" />
+        <!-- <img>g> -->
+        <img src="@/assets/images/anh-ao-mau.png" class="object-cover mx-auto" />
       </div>
       <div class="col-span-4 border">
-        <!-- <nuxt-img>g> -->
+        <!-- <img>g> -->
           chi tiet
       </div>
     </div>

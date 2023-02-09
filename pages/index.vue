@@ -10,7 +10,7 @@
     <ProductItemLT />
   </div>
   <!-- <p>{{ $myPlugin() }}</p> -->
-  <!-- <ChatBox /> -->
+  <ChatBox />
 </template>
 
 <script setup lang="ts">

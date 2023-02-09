@@ -2,8 +2,8 @@
   <div class="l-header sticky top-0 z-50 mx-auto p-3 py-1.5 bg-header w-full md:px-5">
     <div class="flex justify-between text-lg">
       <div class="inline-flex items-center font-medium">
-        <div class="">
-          <nuxt-img fit="cover" src="logo.png" width="35" height="45" alt="logo" />
+        <div>
+          <img fit="cover"  class = "object-cover" src="@/assets/images/logo.png" width="35" height="45" alt="logo" />
         </div>
         <div class="ml-3 md:ml-4 lg:ml-5">
           <NuxtLink to="/"> KakaShop </NuxtLink>
@@ -24,12 +24,12 @@
         <div class="mr-2 md:mr-3 lg:mr-4">
           <NuxtLink to="/gio-hang">
             <AppBadge :sub="productAmount">
-              <nuxt-img class="" src="gio-hang.svg" sizes="sm:350px md:370px lg:400px" />
+              <img class = "object-cover" src="@/assets/images/gio-hang.svg" />
             </AppBadge>
           </NuxtLink>
         </div>
         <div class="ml-3 mt-[1px]">
-          <nuxt-img class="md:t-hidden" src="menu.svg" sizes="sm:700px md:800px lg:800px" @click="onChangeOpenSide" />
+          <img class="md:t-hidden object-cover" src="@/assets/images/menu.svg" @click="onChangeOpenSide" />
           <NuxtLink class="t-hidden md:block" to="/tai-khoan" v-if="isLogin">
             <div class="text-center md:h-8 md:w-8 rounded-full bg-slate-300">t</div>
           </NuxtLink>
@@ -40,16 +40,16 @@
     <div v-if="isOpenSide" class="side-bar fixed right-0 w-3/4 md:w-1/3 mt-1.5 bg-white h-[100vh] z-40 px-7 py-6 flex flex-col font-medium text-slate-600">
       <div class="text-base leading-6 whitespace-nowrap">
         <NuxtLink class="flex items-center mt-2" to="/top-love"
-          ><span class="border p-0.5 rounded-md"><nuxt-img class="" src="logo.png" width="20" height="23" /></span><span class="ml-3">Top love</span></NuxtLink
+          ><span class="border p-0.5 rounded-md"><img  class = "object-cover" src="@/assets/images/logo.png" width="20" height="23" /></span><span class="ml-3">Top love</span></NuxtLink
         >
         <NuxtLink class="flex items-center mt-4" to="/tu-thiet-ke"
-          ><span class="border p-0.5 rounded-md"><nuxt-img class="" src="logo.png" width="20" height="23" /></span><span class="ml-3">Tự thiết kế</span></NuxtLink
+          ><span class="border p-0.5 rounded-md"><img  class = "object-cover" src="@/assets/images/logo.png" width="20" height="23" /></span><span class="ml-3">Tự thiết kế</span></NuxtLink
         >
         <NuxtLink class="flex items-center mt-4" to="/tro-choi"
-          ><span class="border p-0.5 rounded-md"><nuxt-img class="" src="logo.png" width="20" height="23" /></span><span class="ml-3">Game</span></NuxtLink
+          ><span class="border p-0.5 rounded-md"><img  class = "object-cover" src="@/assets/images/logo.png" width="20" height="23" /></span><span class="ml-3">Game</span></NuxtLink
         >
         <NuxtLink class="flex items-center mt-4" to="/tai-khoan"
-          ><span class="border p-0.5 rounded-md"><nuxt-img class="" src="logo.png" width="20" height="23" /></span><span class="ml-3">Tài khoản</span></NuxtLink
+          ><span class="border p-0.5 rounded-md"><img  class = "object-cover" src="@/assets/images/logo.png" width="20" height="23" /></span><span class="ml-3">Tài khoản</span></NuxtLink
         >
       </div>
     </div>

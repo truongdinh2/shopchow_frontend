@@ -107,6 +107,6 @@ body {
     @apply h-full w-3/5 md:h-3/5 md:w-full grid place-items-center font-bold text-moderate-blue bg-transparent;
   }
   .img-small{
-    @apply rounded-full cursor-pointer
+    @apply rounded-full cursor-pointer object-cover
   }
 }
