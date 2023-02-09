@@ -3,8 +3,8 @@
     <div class="chat-component replying" v-if="isReplying">
       <div class="flex pb-2 items-start justify-spread space-x-2">
         <div class="h-9 w-9 flex-shrink-0 rounded-full overflow-hidden object-cover">
-          <!-- <img :src="user.image" alt="" class="h-full w-full" /> -->
-          <nuxt-img src="anh-1-beau.jpg" sizes="sm:700px md:800px lg:800px" />
+          <!-- <img :src="@/assets/images/user.image" alt="" class="h-full w-full" /> -->
+          <img src="@/assets/images/anh-1-beau.jpg"  class="object-cover"/>
         </div>
         <textarea class="h-16" autofocus v-model="reply" @keyup.enter="this.$emit('updated', id, reply)"></textarea>
         <button @click="this.$emit('updated', id, reply)" class="px-4 py-2 rounded-md bg-moderate-blue text-white hover:bg-light-grayish-blue">Reply</button>
@@ -19,8 +19,8 @@
         <div class="flex items-center justify-between">
           <div class="flex pb-2 items-center justify-center space-x-2">
             <div class="h-9 w-9 flex-shrink-0 rounded-full overflow-hidden object-cover">
-              <!-- <img :src="user.image" alt="" class="h-full w-full" /> -->
-              <nuxt-img src="anh-1-beau.jpg" sizes="sm:700px md:800px lg:800px" />
+              <!-- <img :src="@/assets/images/user.image" alt="" class="h-full w-full" /> -->
+              <img src="@/assets/images/anh-1-beau.jpg"  class="object-cover"/>
             </div>
             <span class="font-medium text-dark-blue text-sm lowercase">
               {{ user.username }}

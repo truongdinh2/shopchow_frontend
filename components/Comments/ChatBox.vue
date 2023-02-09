@@ -24,14 +24,14 @@
 
     <div class="bg-white mt-4 items-start flex-wrap md:flex-nowrap flex flex-col md:flex-row p-5 gap-x-6 gap-y-4 rounded-lg chat-shadow">
       <div class="h-9 w-9 hidden md:block rounded-full overflow-hidden object-cover shrink-0">
-        <nuxt-img src="anh-1-beau.jpg" sizes="sm:700px md:800px lg:800px" />
-        <!-- <img :src="currentUser.image" :alt="currentUser.username" /> -->
+        <img src="@/assets/images/anh-1-beau.jpg"  class="object-cover"   />
+        <!-- <img :src="@/assets/images/currentUser.image" :alt="currentUser.username" /> -->
       </div>
       <textarea v-model="userComment" @keyup.enter.prevent="newComment" autofocus></textarea>
       <div class="flex w-full md:w-auto justify-between">
         <div class="h-9 block md:hidden w-9 rounded-full overflow-hidden object-cover shrink-0">
-          <nuxt-img src="anh-1-beau.jpg" sizes="sm:700px md:800px lg:800px" />
-          <!-- <img :src="currentUser.image" :alt="currentUser.username" /> -->
+          <img src="@/assets/images/anh-1-beau.jpg" class="object-cover"/>
+          <!-- <img :src="@/assets/images/currentUser.image" :alt="currentUser.username" /> -->
         </div>
         <button v-if="!idReply" @click="newComment" class="px-5 py-2 rounded-md bg-moderate-blue text-white hover:bg-light-grayish-blue uppercase">Send</button>
         <button v-else @click="onUpdated(idReply, userComment)" class="px-4 py-2 rounded-md bg-moderate-blue text-white hover:bg-light-grayish-blue">Reply</button>

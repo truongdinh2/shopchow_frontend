@@ -34,19 +34,12 @@ const discountType = ref<string | number>(1); //giam tien 2 giam %
 const tacgia = ref('Nguyễn đình trường');
 const isNew = ref(true);
 const clotheType = ref(2); // 1 ban 2 moi dang
-<<<<<<< HEAD
-=======
 const toLink = ref('products/1'); // 1 ban 2 moi dang
->>>>>>> 552cb5e (complete/product-item)
 </script>
 
 <template>
   <article class="rounded-xl bg-white p-1 md:p-3 shadow-lg lg:hover:shadow-xl lg:hover:transform lg:hover:scale-105 duration-300">
-<<<<<<< HEAD
-    <NuxtLink to="#">
-=======
     <NuxtLink :to="toLink">
->>>>>>> 552cb5e (complete/product-item)
       <div class="relative flex max-h-52">
         <div class="absolute top-0 left-[-1px]">
           <MerchandiseStatus :merchandiseStatus="clotheType" :merchandise-quantity="1" />
@@ -54,7 +47,7 @@ const toLink = ref('products/1'); // 1 ban 2 moi dang
         <div class="absolute top-0.5 right-[-1px]">
           <div v-if="isNew" class="text-[11px] md:text-[12px] font-medium min-h-[18px] min-w-[18px] bg-red-500 px-1 py-0.5 text-white rounded-full leading-[11px] border text-center">new</div>
         </div>
-        <nuxt-img class="mx-auto" src="anh-ao-mau.png" fit="cover" sizes="sm:183px md:300px lg:200px" />
+        <img src="@/assets/images/anh-ao-mau.png" class="object-cover mx-auto" />
       </div>
 
       <div class="p-1 md:p-2">
@@ -67,9 +60,9 @@ const toLink = ref('products/1'); // 1 ban 2 moi dang
         <p class="mt-2.5 text-[11px] d-webkit-box text-slate-400 overflow-hidden text-ellipsis">Đoạn giới thiệu sơ qua. Dài quá thì see more. dĐoạn giới thiệu sơ qua. Dài quá thì see more...</p>
         <div class="flex gap-x-0.5 md:gap-x-2 mt-2.5 justify-between" style="margin-right: -1px; margin-left: -1px;">
           <div v-if="clotheType == 1" class="flex gap-x-2 self-center">
-            <nuxt-img class="img-small" @click="" src="anh-1-beau.jpg" width="25" height="25" />
-            <nuxt-img class="img-small" @click="" src="anh-1-beau.jpg" width="25" height="25" />
-            <nuxt-img class="img-small" @click="" src="anh-1-beau.jpg" width="25" height="25" />
+            <img class="img-small" @click="" src="@/assets/images/anh-1-beau.jpg" width="25" height="25" />
+            <img class="img-small" @click="" src="@/assets/images/anh-1-beau.jpg" width="25" height="25" />
+            <img class="img-small" @click="" src="@/assets/images/anh-1-beau.jpg" width="25" height="25" />
           </div>
           <div v-if="clotheType == 2" class="flex items-center">
             <img class="mr-1 w-3 md:w-5 md:mr-4" src="@/assets/images/tagia-icon.svg" alt="tacgia" />

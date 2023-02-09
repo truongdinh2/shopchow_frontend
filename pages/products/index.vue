@@ -1,10 +1,4 @@
 <template>
-<<<<<<< HEAD
-<div>product deitail</div>
-</template>
-
-<script setup>
-=======
   <div class="p-3 md:p-6">
     <TopPage />
     <div>
@@ -15,19 +9,15 @@
 
 <script setup>
 const router = useRouter();
->>>>>>> 552cb5e (complete/product-item)
 // definePageMeta({
 //   layout: 'products',
 // });
 
 // data alias products
 // const { data: products } = await useFetch('https://fakestoreapi.com/products');
-<<<<<<< HEAD
-=======
 const handleSubmit = () => {
   router.push({path:'/'})
 };
->>>>>>> 552cb5e (complete/product-item)
 </script>
 
 <style scoped></style>
