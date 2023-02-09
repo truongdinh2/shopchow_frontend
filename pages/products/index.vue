@@ -1,4 +1,5 @@
 <template>
+
   <div class="p-3 md:p-6">
     <TopPage />
     <div>
@@ -15,6 +16,7 @@ const router = useRouter();
 
 // data alias products
 // const { data: products } = await useFetch('https://fakestoreapi.com/products');
+
 const handleSubmit = () => {
   router.push({path:'/'})
 };
