@@ -17,7 +17,7 @@
 <script setup>
 const { error } = defineProps(["error"]);
 
-const handlerClearError = () => clearError({ redirect: "/" });
+const handlerClearError = () => clearError({ redirect: "/products" });
 </script>
 
 <style lang="scss" scoped></style>

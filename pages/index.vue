@@ -1,11 +1,16 @@
 <template>
-  <div class="mx-auto grid max-w-6xl grid-cols-1 gap-6 p-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+  <div class="mx-auto grid max-w-6xl grid-cols-2 gap-x-2 gap-y-3 p-3 md:gap-x-2 md:p-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+    <ProductItemLT />
+    <ProductItemLT />
+    <ProductItemLT />
+    <ProductItemLT />
+    <ProductItemLT />
     <ProductItemLT />
     <ProductItemLT />
     <ProductItemLT />
   </div>
-  <p>{{ $myPlugin() }}</p>
-  <ChatBox />
+  <!-- <p>{{ $myPlugin() }}</p> -->
+  <!-- <ChatBox /> -->
 </template>
 
 <script setup lang="ts">
