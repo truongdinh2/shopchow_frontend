@@ -13,10 +13,10 @@
             <AppBadge content="Top Love" sub="new" />
           </NuxtLink>
         </div>
-        <div class="hidden md:block md:ml-7 lg:ml-10">
+        <div class="t-hidden md:block md:ml-7 lg:ml-10">
           <NuxtLink to="/tu-thiet-ke"> Tạo thiết kế </NuxtLink>
         </div>
-        <div class="hidden md:block ml-3 md:ml-6 lg:ml-10">
+        <div class="t-hidden md:block ml-3 md:ml-6 lg:ml-10">
           <NuxtLink to="/tro-choi"> Game giảm giá </NuxtLink>
         </div>
       </div>
@@ -29,11 +29,11 @@
           </NuxtLink>
         </div>
         <div class="ml-3 mt-[1px]">
-          <nuxt-img class="md:hidden" src="menu.svg" sizes="sm:700px md:800px lg:800px" @click="onChangeOpenSide" />
-          <NuxtLink class="hidden md:block" to="/tai-khoan" v-if="isLogin">
+          <nuxt-img class="md:t-hidden" src="menu.svg" sizes="sm:700px md:800px lg:800px" @click="onChangeOpenSide" />
+          <NuxtLink class="t-hidden md:block" to="/tai-khoan" v-if="isLogin">
             <div class="text-center md:h-8 md:w-8 rounded-full bg-slate-300">t</div>
           </NuxtLink>
-          <NuxtLink class="hidden md:block" to="/login" v-else>Đăng nhập</NuxtLink>
+          <NuxtLink class="t-hidden md:block" to="/login" v-else>Đăng nhập</NuxtLink>
         </div>
       </div>
     </div>

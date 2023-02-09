@@ -54,13 +54,16 @@ body {
   .bg-dark-light {
     background-color: #e0e0e0;
   }
+  .t-hidden{
+    display: none;
+  }
 }
 @layer components {
   .btn {
     @apply rounded-md text-white p-4 bg-blue-500;
   }
   .modal {
-    @apply fixed inset-0 bg-black/20 backdrop-blur-sm;
+    @apply fixed inset-0 bg-black/20 backdrop-blur-sm z-10;
   }
   * #app {
     @apply bg-very-light-gray lg:p-10;
